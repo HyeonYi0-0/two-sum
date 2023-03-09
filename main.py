@@ -1,4 +1,4 @@
-def twoSum(nums, target) :
+def twoSum(nums: list[int], target: int) -> list[int] :
   listLength = len(nums)
   res = []
   for i in range(listLength-1) :
@@ -8,10 +8,3 @@ def twoSum(nums, target) :
         res.append(j)
     
   return res
-
-print("input: ", end="")
-nums = list(map(int, input().split()))
-
-target = int(input("target: "))
-
-print(twoSum(nums, target))
